@@ -1371,6 +1371,7 @@ header .container-fluid {
   background-color: #232429;
   background-image: url("../img/shapes.png");
   background-repeat: no-repeat;
+  background-position-y: 300px;
 }
 .work-process .section-title h2 {
   position: relative;
