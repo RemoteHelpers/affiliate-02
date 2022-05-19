@@ -105,6 +105,10 @@
   .about-area-v3 .about-img-box .shape {
     right: -10px;
   }
+  .work-process {
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 /*Medium Device*/
@@ -201,6 +205,10 @@
   .contact-area-v2 .contact-wrapper {
     padding: 50px 30px 55px;
   }
+  .work-process {
+    background-size: contain;
+    background-position: center;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -279,22 +287,6 @@
     float: none;
     text-align: center;
   }
-  .about-area-v3 .about-img-box:after {
-    display: none;
-  }
-  .testimonial-area-v3
-    .testimonial-item
-    .testimonial-content
-    .author-title-info {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-  .testimonial-area-v3 .testimonial-item .testimonial-content .author-title {
-    margin-right: 0px;
-  }
-  .testimonial-area-v3 .testimonial-item .testimonial-content .author-social {
-    margin-top: 20px;
-  }
   .breadcrumbs-area {
     padding: 130px 0 60px;
   }
@@ -317,11 +309,15 @@
     text-align: center;
     margin-top: 20px;
   }
-  .testimonial-area-v2 .single-testimonial .testimonial-innter-content {
+  .testimonial-area-v2 .feedback-slide .testimonial-innter-content {
     flex-direction: column;
   }
-  .testimonial-area-v2 .single-testimonial .thumb {
+  .testimonial-area-v2 .feedback-slide .thumb {
     margin-bottom: 20px;
+  }
+  .work-process {
+    background-size: contain;
+    background-position-y: 1350px;
   }
 }
 /* Mobile Devices, Tablets */

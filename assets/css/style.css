@@ -1369,28 +1369,7 @@ header .container-fluid {
   isolation: isolate;
   z-index: 0;
   background-color: #232429;
-}
-.work-process .img-container {
-  position: absolute;
-  z-index: 1;
-  top: 0px;
-  left: -1050px;
-}
-.work-process .img-container .img-contain {
-  width: 1448px;
-  height: 1432px;
-  background-image: url("../img/illustration-2.png");
-}
-.work-process .img-container-2 {
-  position: absolute;
-  z-index: -1;
-  bottom: 0px;
-  right: -1150px;
-}
-.work-process .img-container-2 .img-contain {
-  width: 1608px;
-  height: 1612px;
-  background-image: url("../img/illustration-3.png");
+  background-image: url("../img/shapes.png");
   background-repeat: no-repeat;
 }
 .work-process .section-title h2 {
@@ -2370,8 +2349,10 @@ header .container-fluid {
 
 /*=======  12. Start Footer area ===*/
 .footer-area-v2 {
+  position: relative;
   background-color: #fff;
   padding: 45px 0px 50px;
+  z-index: 10;
 }
 .footer-area-v2 .social-media-links {
   float: right;
