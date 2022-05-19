@@ -1766,6 +1766,8 @@ header .container-fluid {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 .team-area-v2 .single-team-member .member-info {
   background-color: #222429;
@@ -1809,6 +1811,8 @@ header .container-fluid {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 /* End Team members */
 
