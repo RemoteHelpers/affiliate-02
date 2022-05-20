@@ -1,17 +1,11 @@
-/*Large Device*/
 @media only screen and (min-width: 1871px) {
   .header-area-v2 .primary-menu {
     height: 100%;
   }
 }
-
 @media only screen and (min-width: 1200px) and (max-width: 1870px) {
   header .container-fluid {
     padding-left: 15px;
-    padding-right: 15px;
-  }
-  .header-area-v1 .header-navigation .navigation-area .top-header-area,
-  .header-area-v1 .header-navigation .navigation-area .primary-menu {
     padding-right: 15px;
   }
   .header-area-v2 .header-navigation .main-menu ul li > a {
@@ -32,8 +26,6 @@
     align-items: center;
   }
 }
-
-/*Large Device*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header-navigation .main-menu ul li.menu-item-has-children > a:after {
     display: none;
@@ -72,28 +64,8 @@
     display: inline-block;
     margin-left: 30px;
   }
-  .header-area-v1 .top-header-area {
-    display: none;
-  }
-  .header-area-v1 .header-navigation .site-branding {
-    width: 25%;
-  }
-  .header-area-v1 .header-navigation .navigation-area {
-    width: 75%;
-  }
-  .header-area-v1 .header-navigation .main-menu {
-    padding-left: 0px;
-    width: 100%;
-  }
-  .header-area-v1 .header-navigation .nav-button {
-    display: none;
-  }
-  .header-area-v1 .header-navigation .main-menu ul li:first-child .nav-link,
   .header-area-v2 .header-navigation .main-menu ul li:first-child .nav-link {
     padding-left: 20px;
-  }
-  .testimonial-area-v3 .testimonial-thumb-slider {
-    padding-right: 0px;
   }
   .contact-information-area .contact-info-item {
     padding: 40px 10px;
@@ -102,16 +74,11 @@
     font-size: 13px;
     line-height: 26px;
   }
-  .about-area-v3 .about-img-box .shape {
-    right: -10px;
-  }
   .work-process {
     background-size: cover;
     background-position: center;
   }
 }
-
-/*Medium Device*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-content h1 {
     font-size: 34px;
@@ -128,34 +95,13 @@
     height: 100%;
   }
 }
-
-/* Small Devices, Tablets */
 @media only screen and (max-width: 991px) {
-  .about-area-v3 .about-img-box .shape {
-    right: -10px;
-  }
   .header-navigation .main-menu ul li.menu-item-has-children > a:after {
     display: none;
   }
   header .container-fluid {
     padding-left: 15px;
     padding-right: 15px;
-  }
-  .header-area-v1 .top-header-area {
-    display: none;
-  }
-  .header-area-v1 .header-navigation .main-menu {
-    padding-left: 0px;
-    width: 100%;
-  }
-  .header-area-v1 .header-navigation .nav-button {
-    display: none;
-  }
-  .header-area-v1 .header-navigation .site-branding {
-    width: 35%;
-  }
-  .header-area-v1 .header-navigation .navigation-area {
-    width: 65%;
   }
   .header-area-v2 .header-right ul li .off-menu {
     display: none;
@@ -164,7 +110,6 @@
     display: inline-block;
     margin-left: 30px;
   }
-  .header-area-v1 .header-navigation .main-menu ul li:first-child .nav-link,
   .header-area-v2 .header-navigation .main-menu ul li:first-child .nav-link {
     padding-left: 20px;
   }
@@ -176,9 +121,6 @@
   }
   .testimonial-area-v2 .testimonial-slider-two {
     margin-left: 0%;
-  }
-  .header-area-v1 .header-navigation .navigation-area .primary-menu {
-    padding-right: 15px;
   }
   .counter-area-v2 .counter-img {
     display: none;
@@ -199,9 +141,6 @@
   .blog-area-v2 .blog-post-item .post-thumbnail img {
     width: 100%;
   }
-  .testimonial-area-v3 .testimonial-thumb-slider {
-    padding-right: 0px;
-  }
   .contact-area-v2 .contact-wrapper {
     padding: 50px 30px 55px;
   }
@@ -210,8 +149,6 @@
     background-position: center;
   }
 }
-
-/* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
   .header-area-v2 .header-right ul li.phon-column {
     display: none;
@@ -320,7 +257,6 @@
     background-position-y: 1350px;
   }
 }
-/* Mobile Devices, Tablets */
 @media only screen and (max-width: 413px) {
   .clients-img-box .clients-imgs li {
     max-width: 50%;
