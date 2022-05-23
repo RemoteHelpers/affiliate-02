@@ -108,7 +108,7 @@ body {
   width: 100%;
 }
 .form_control {
-  width: 100%;
+  min-width: 100%;
   height: 70px;
   padding: 0 20px;
 }
@@ -541,6 +541,13 @@ header .container-fluid {
 .header-area-v2 .header-right {
   float: right;
 }
+.header-area-v2 .header-right ul {
+  display: flex;
+}
+.header-area-v2 .header-right ul #burger-menu-bar {
+  display: flex;
+  align-items: center;
+}
 .header-area-v2 .header-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -550,11 +557,15 @@ header .container-fluid {
   align-items: center;
   height: 100%;
 }
+.header-area-v2 .header-right:hover ul li {
+  cursor: pointer;
+}
 .header-area-v2 .header-right ul li {
-  display: inline-block;
+  display: flex;
+  flex-wrap: nowrap;
   margin-left: 50px;
 }
-.header-area-v2 .header-right ul li a.phone-btn {
+.header-area-v2 .header-right ul li.phone-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,7 +573,7 @@ header .container-fluid {
   -ms-flex-align: center;
   align-items: center;
 }
-.header-area-v2 .header-right ul li a.phone-btn .icon {
+.header-area-v2 .header-right ul li.phone-btn .icon {
   border: 2px solid rgba(34, 36, 41, 0.1);
   height: 50px;
   width: 50px;
@@ -579,14 +590,14 @@ header .container-fluid {
   border-radius: 50%;
   margin-right: 12px;
 }
-.header-area-v2 .header-right ul li a.phone-btn .icon i {
+.header-area-v2 .header-right ul li.phone-btn .icon i {
   color: #ffaa17;
 }
-.header-area-v2 .header-right ul li a.phone-btn .info span {
+.header-area-v2 .header-right ul li.phone-btn .info span {
   display: block;
   color: #565872;
 }
-.header-area-v2 .header-right ul li a.phone-btn .info span h6 {
+.header-area-v2 .header-right ul li.phone-btn .info span h6 {
   font-size: 16px;
   font-weight: 600;
   color: #222429;

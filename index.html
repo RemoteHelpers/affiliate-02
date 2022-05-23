@@ -27,22 +27,6 @@
         <span></span>
       </div>
     </div>
-    <div class="modal fade" id="search-modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <form>
-            <div class="form_group">
-              <input
-                type="text"
-                class="form_control"
-                placeholder="Search here..."
-              />
-              <button class="search_btn"><i class="fa fa-search"></i></button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
     <div class="offcanvas-panel">
       <div class="offcanvas-panel-inner">
         <svg class="panel-logo">
@@ -51,10 +35,10 @@
         <div class="about-us">
           <h5 class="panel-widget-title">About Us</h5>
           <p>
-            We are a dedicated outsourcing company that has access to a large
-            candidate pool and undertakes the process to find the most
-            appropriate and skilled employees according to your requirements.
-            Our team will allow you to reach your project's goals faster
+            We are an outstaffing company that has a large candidate pool and
+            undertakes the process to find the most appropriate and skilled
+            employees according to your requirements. Build a dream team with us
+            to reach your company's goals faster
           </p>
         </div>
         <div class="contact-us">
@@ -67,7 +51,9 @@
             </li>
             <li>
               <i class="fal fa-phone"></i>
-              <a href="tel:+380997101033">+380 (99) 710-1033</a>
+              <a href="https://api.whatsapp.com/send?phone=380666146468"
+                >+380 (66) 614-6468</a
+              >
             </li>
           </ul>
         </div>
@@ -104,11 +90,6 @@
                   <nav class="main-menu">
                     <ul>
                       <li class="menu-item">
-                        <a href="#home" class="nav-link page_scroll active"
-                          >Home</a
-                        >
-                      </li>
-                      <li class="menu-item">
                         <a href="#service" class="nav-link page_scroll"
                           >Services</a
                         >
@@ -124,11 +105,6 @@
                       <li class="menu-item">
                         <a href="#prices" class="nav-link page_scroll">Price</a>
                       </li>
-                      <li class="menu-item">
-                        <a href="#form-section" class="nav-link page_scroll"
-                          >Contacts</a
-                        >
-                      </li>
                     </ul>
                   </nav>
                 </div>
@@ -137,16 +113,13 @@
             <div class="col-xl-3 col-lg-5 col-md-7 col-5">
               <div class="header-right">
                 <ul>
-                  <li class="phon-column">
-                    <a href="tel:+380997101033" class="phone-btn">
-                      <div class="icon">
-                        <i class="fa fa-phone"></i>
-                      </div>
-                      <div class="info">
-                        <span>Call Us</span>
-                        <h6>+380 (99) 710-1033</h6>
-                      </div>
-                    </a>
+                  <li class="phon-column phone-btn">
+                    <div class="icon">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="info">
+                      <span>Contact Us</span>
+                    </div>
                   </li>
                   <li id="burger-menu-bar">
                     <a href="#" class="off-menu">
@@ -182,7 +155,10 @@
               <h1 class="wow fadeInUp" data-wow-delay=".5s">
                 Streamline your business with Remote Helpers
               </h1>
-              <a href="#" class="main-btn wow fadeInUp" data-wow-delay=".5s"
+              <a
+                href="#prices"
+                class="main-btn wow fadeInUp"
+                data-wow-delay=".5s"
                 >Learn More</a
               >
             </div>
@@ -941,6 +917,18 @@
                   </div>
                 </div>
               </form>
+              <!-- Calendly inline widget begin -->
+              <div
+                class="calendly-inline-widget"
+                data-url="https://calendly.com/sales-rhs/demo-call"
+                style="min-width: 320px; height: 630px"
+              ></div>
+              <script
+                type="text/javascript"
+                src="https://assets.calendly.com/assets/external/widget.js"
+                async
+              ></script>
+              <!-- Calendly inline widget end -->
             </div>
           </div>
         </div>
@@ -1022,7 +1010,6 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/slick-swiper.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>

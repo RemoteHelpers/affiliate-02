@@ -2,6 +2,15 @@
   .header-area-v2 .primary-menu {
     height: 100%;
   }
+  .work-process .contact-form {
+    display: flex;
+  }
+  .work-process .contact-form .calendly-inline-widget {
+    margin-left: 20px;
+  }
+  .work-process .contact-form .col-lg-12 .form_group .form_control {
+    min-height: 400px;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1870px) {
   header .container-fluid {
@@ -14,6 +23,9 @@
   .header-area-v2 .nav-menu {
     padding-left: 0px;
   }
+  .header-area-v2 .header-right ul {
+    min-width: 300px;
+  }
   .header-area-v2 .header-right ul li {
     display: inline-block;
     margin-left: 30px;
@@ -24,6 +36,15 @@
   .header-area-v2 .col-xl-7 {
     display: flex;
     align-items: center;
+  }
+  .work-process .contact-form {
+    display: flex;
+  }
+  .work-process .contact-form .calendly-inline-widget {
+    margin-left: 50px;
+  }
+  .work-process .contact-form .col-lg-6 {
+    min-width: 100%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -77,6 +98,15 @@
   .work-process {
     background-size: cover;
     background-position: center;
+  }
+  .work-process .contact-form {
+    display: flex;
+  }
+  .work-process .contact-form .calendly-inline-widget {
+    margin-left: 30px;
+  }
+  .work-process .contact-form .col-lg-6 {
+    min-width: 100%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -147,6 +177,12 @@
   .work-process {
     background-size: contain;
     background-position: center;
+  }
+  .work-process .contact-form {
+    display: flex;
+  }
+  .work-process .contact-form .calendly-inline-widget {
+    margin-left: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
