@@ -5,13 +5,20 @@
   function mainMenu() {
     // Variables
     var var_window = $(window),
+      switchOn = $(".js-switch-on-btn"),
       navContainer = $(".header-navigation"),
       navbarToggler = $(".navbar-toggler"),
       navMenu = $(".nav-menu"),
-      navMenuLi = $(".nav-menu ul li ul li"),
       closeIcon = $(".navbar-close");
     // navbar toggler
     navbarToggler.on("click", function () {
+      navMenu.on("click", function (e) {
+        e.preventDefault();
+        if (e.target.className !== "nav-menu menu-on") {
+          navMenu.removeClass("menu-on");
+          navbarToggler.removeClass("active");
+        }
+      });
       navbarToggler.toggleClass("active");
       navMenu.toggleClass("menu-on");
     });
@@ -56,21 +63,22 @@
     mainMenu();
   });
   // Panel Widget
-  var panelIcon = $(".off-menu"),
-    panelClose = $(".panel-close"),
+  var panelClose = $(".panel-close"),
     contactUs = $(".phon-column"),
     panelWrap = $(".offcanvas-panel");
-  panelIcon.on("click", function (e) {
-    panelWrap.toggleClass("panel-on");
-    e.preventDefault();
-  });
   contactUs.on("click", function (e) {
-    panelWrap.toggleClass("panel-on");
     e.preventDefault();
+    panelWrap.toggleClass("panel-on");
   });
   panelClose.on("click", function (e) {
-    panelWrap.removeClass("panel-on");
     e.preventDefault();
+    panelWrap.removeClass("panel-on");
+  });
+  panelWrap.on("click", function (e) {
+    e.preventDefault();
+    if (e.target === e.currentTarget) {
+      panelWrap.removeClass("panel-on");
+    }
   });
   //===== Prealoder
   $(window).on("load", function (event) {

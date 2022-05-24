@@ -1006,7 +1006,7 @@ header .container-fluid {
   font-family: "Rajdhani";
   font-style: normal;
   font-weight: 500;
-  font-size: 64px;
+  font-size: 58px;
   line-height: 82px;
   color: #000000;
 }
@@ -1236,7 +1236,8 @@ header .container-fluid {
   filter: grayscale(0);
 }
 .portfolio-area-v2 {
-  padding-top: 110px;
+  padding-top: 360px;
+  /* Было 110px до удаления секции с командой */
 }
 .portfolio-area-v2 .section-title h2 {
   color: white;

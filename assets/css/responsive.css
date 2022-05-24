@@ -11,6 +11,12 @@
   .work-process .contact-form .col-lg-12 .form_group .form_control {
     min-height: 400px;
   }
+  .work-process .single-process:nth-child(1) {
+    height: 303px;
+  }
+  .work-process #pricelist-title {
+    width: 650px;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1870px) {
   header .container-fluid {
@@ -45,6 +51,18 @@
   }
   .work-process .contact-form .col-lg-6 {
     min-width: 100%;
+  }
+  .work-process .single-process:nth-child(1) {
+    height: 303px;
+  }
+  .work-process #pricelist-title {
+    width: 650px;
+  }
+  #burger-menu-bar .off-menu {
+    display: none;
+  }
+  .header-area-v2 .header-right ul {
+    justify-content: end;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -95,9 +113,15 @@
     font-size: 13px;
     line-height: 26px;
   }
+  .work-process .single-process .info p {
+    font-size: 14px;
+  }
   .work-process {
     background-size: cover;
     background-position: center;
+  }
+  .work-process .flex-price-container .price-container p {
+    font-size: 48px;
   }
   .work-process .contact-form {
     display: flex;
@@ -107,6 +131,12 @@
   }
   .work-process .contact-form .col-lg-6 {
     min-width: 100%;
+  }
+  .work-process .single-process:nth-child(1) {
+    height: 303px;
+  }
+  .work-process .section-title #pricelist-title {
+    width: 500px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -123,6 +153,15 @@
   }
   .service-area-v2 .single-service-item {
     height: 100%;
+  }
+  .work-process .single-process:nth-child(1) {
+    height: 303px;
+  }
+  .about-area-v2 .about-list-item .row {
+    flex-direction: row;
+  }
+  .about-area-v2 .about-list-item .row .col-lg-6 {
+    width: 50%;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -183,6 +222,9 @@
   }
   .work-process .contact-form .calendly-inline-widget {
     margin-left: 20px;
+  }
+  .work-process .section-title {
+    /* width: 400px; */
   }
 }
 @media only screen and (max-width: 767px) {
@@ -270,6 +312,9 @@
   .cta-wrapper-two .cta-img img {
     clip-path: none;
   }
+  .about-area-v2 .about-list-item .col-lg-6:first-child {
+    margin-bottom: 5px;
+  }
   .nav-post-btn {
     text-align: center;
     margin-bottom: 20px;
@@ -291,6 +336,17 @@
   .work-process {
     background-size: contain;
     background-position-y: 1350px;
+  }
+  .work-process .contact-form {
+    flex-direction: column;
+  }
+  .work-process .contact-form form {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .work-process #pricelist-title {
+    max-width: 230px;
   }
 }
 @media only screen and (max-width: 413px) {
