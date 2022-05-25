@@ -301,11 +301,7 @@
                   </div>
                 </div>
               </div>
-              <button
-                href="#calendly"
-                id="js-calendly-open"
-                class="main-btn wow fadeInUp"
-              >
+              <button id="js-calendly-open" class="main-btn wow fadeInUp">
                 Demo Call
               </button>
             </div>
@@ -750,7 +746,9 @@
                 <h5>Let's discuss more options</h5>
                 <br />
                 <br />
-                <button class="main-btn">Get a consultation</button>
+                <button class="main-btn">
+                  <a href="#get-in-touch">Get a consultation</a>
+                </button>
               </div>
             </div>
           </div>
@@ -762,7 +760,7 @@
             <div
               class="section-title section-title-white mb-75 text-center wow fadeInUp"
             >
-              <span class="span">Get in touch</span>
+              <span id="get-in-touch" class="span">Get in touch</span>
               <h2 id="last-section">Write Us a Message</h2>
             </div>
           </div>
@@ -823,11 +821,30 @@
                     <div class="form_group">
                       <textarea
                         class="form_control"
-                        name="message"
+                        name="note"
                         placeholder="Your Message"
                       ></textarea>
                     </div>
                   </div>
+                  <input
+                    type="text"
+                    hidden
+                    name="global_company_name"
+                    value="Remote Helpers"
+                    placeholder="Your company"
+                  />
+                  <input
+                    type="text"
+                    hidden
+                    name="project_company"
+                    value="affiliate.rh-s.com"
+                  />
+                  <input
+                    type="text"
+                    hidden
+                    name="promocode"
+                    value="MVO1Z1W21WOS"
+                  />
                   <div class="col-lg-12">
                     <div class="form_group text-center">
                       <button type="submit" class="main-btn">
@@ -895,8 +912,6 @@
                     <p>finance@rh-s.com</p></a
                   >
                 </li>
-                <!-- <a href="mailto:Sales@rh-s.com">Sales@rh-s.com</a>
-              <a href="mailto:finance@rh-s.com">finance@rh-s.com</a> -->
               </ul>
             </div>
           </div>
@@ -908,7 +923,7 @@
       <button type="button" class="close-btn"><span>&#10006;</span></button>
     </div>
     <div id="modal-calendly">
-      <div id="modal-content">
+      <div class="modal-content">
         <div
           id="calendly"
           class="calendly-inline-widget"
@@ -939,6 +954,5 @@
     <script src="assets/js/jquery.waypoints.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/modal.js"></script>
   </body>
 </html>
