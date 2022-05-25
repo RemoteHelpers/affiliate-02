@@ -36,14 +36,25 @@
           <h5 class="panel-widget-title">Contact Us</h5>
           <ul>
             <li>
-              <i class="fal fa-envelope-open"></i>
-              <a href="mailto:Sales@rh-s.com">Sales@rh-s.com</a>
-              <a href="mailto:hr@remotemployees.com">hr@remotemployees.com</a>
-              <a href="mailto:finance@rh-s.com">finance@rh-s.com</a>
+              <a href="mailto:Sales@rh-s.com"
+                ><svg class="icon" width="50" height="50">
+                  <use href="assets/svg/symbol-defs.svg#icon-gmail"></use></svg
+                >Sales@rh-s.com</a
+              >
             </li>
             <li>
-              <i class="fal fa-phone"></i>
+              <a href="mailto:finance@rh-s.com"
+                ><svg class="icon" width="50" height="50">
+                  <use href="assets/svg/symbol-defs.svg#icon-gmail"></use></svg
+                >finance@rh-s.com</a
+              >
+            </li>
+            <li>
               <a href="https://api.whatsapp.com/send?phone=380666146468"
+                ><svg class="icon" width="50" height="50">
+                  <use
+                    href="assets/svg/symbol-defs.svg#icon-whatsup"
+                  ></use></svg
                 >+380 (66) 614-6468</a
               >
             </li>
@@ -63,7 +74,7 @@
               <div class="site-branding">
                 <div class="brand-logo">
                   <a href="index.html">
-                    <svg width="151">
+                    <svg width="151" height="34">
                       <use
                         href="assets/svg/symbol-defs.svg#icon-rh-logo"
                       ></use></svg
@@ -90,7 +101,7 @@
                         <a href="#about" class="nav-link page_scroll">About</a>
                       </li>
                       <li class="menu-item">
-                        <a href="#portfolio" class="nav-link page_scroll"
+                        <a href="#portfolio-anchor" class="nav-link page_scroll"
                           >Portfolio</a
                         >
                       </li>
@@ -137,10 +148,10 @@
           <div class="col-md-6">
             <div class="hero-content">
               <span class="span wow fadeInUp" data-wow-delay=".5s"
-                >Build a dream team of remote staff</span
+                >It & marketing</span
               >
               <h1 class="wow fadeInUp" data-wow-delay=".5s">
-                Streamline your business with Remote Helpers
+                Build a dream team of remote staff
               </h1>
               <a
                 href="#prices"
@@ -268,7 +279,7 @@
                 <h2>We are a dedicated outstaffing company</h2>
               </div>
               <p>
-                A large reliable candidates pool and undertakes the process to
+                A large reliable candidates pool. We undertake the process to
                 find the most appropriate and skilled employees according to
                 your requirements. Take the benefits of online hiring
               </p>
@@ -290,7 +301,13 @@
                   </div>
                 </div>
               </div>
-              <a href="#calendly" class="main-btn wow fadeInUp">Demo Call</a>
+              <button
+                href="#calendly"
+                id="js-calendly-open"
+                class="main-btn wow fadeInUp"
+              >
+                Demo Call
+              </button>
             </div>
           </div>
           <div class="col-lg-6">
@@ -372,104 +389,14 @@
       </div>
     </section>
     <!-- <section class="team-area-v2 pb-80">
-      <div class="container-fluid">
-        <div class="row" id="team">
-          <div class="col-md-12">
-            <div class="section-title text-center mb-70 wow fadeInUp">
-              <span class="span" id="team-staff">Meet Our Staff!</span>
-              <h2>Our dedicated team</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row swiper">
-          <div class="swiper-wrapper">
-            <div class="single-team-member mb-40 wow fadeInUp">
-              <div class="team-img">
-                <img
-                  src="assets/img/team/elyar-timurov.png"
-                  alt="Eliar Timurov"
-                />
-              </div>
-              <div class="member-info">
-                <h5>Teimurov Eliar</h5>
-                <p>Project manager</p>
-              </div>
-            </div>
-
-            <div class="single-team-member mb-40 wow fadeInUp">
-              <div class="team-img">
-                <img
-                  src="assets/img/team/ira-stanislavchuk.png"
-                  alt="Ira Stanislavchuk"
-                />
-              </div>
-              <div class="member-info">
-                <h5>Ira Stanislavchuk</h5>
-                <p>Lead generation</p>
-              </div>
-            </div>
-
-            <div class="single-team-member mb-40 wow fadeInUp">
-              <div class="team-img">
-                <img
-                  src="assets/img/team/anna-levchuk.png"
-                  alt="Levchuk Anna"
-                />
-              </div>
-              <div class="member-info">
-                <h5>Levchuk Anna</h5>
-                <p>Project manager</p>
-              </div>
-            </div>
-
-            <div class="single-team-member mb-40 wow fadeInUp">
-              <div class="team-img">
-                <img
-                  src="assets/img/team/dmitriy-vovk.png"
-                  alt="Dmytro Volkov"
-                />
-              </div>
-              <div class="member-info">
-                <h5>Dmytro Volkov</h5>
-                <p>Video editor</p>
-              </div>
-            </div>
-
-            <div class="single-team-member mb-40 wow fadeInUp">
-              <div class="team-img">
-                <img
-                  src="assets/img/team/natalia-litvinova.png"
-                  alt="Natalia Litvinova"
-                />
-              </div>
-              <div class="member-info">
-                <h5>Natalia Litvinova</h5>
-                <p>Graphic designer</p>
-              </div>
-            </div>
-
-            <div class="single-team-member mb-40 wow fadeInUp">
-              <div class="team-img">
-                <img
-                  src="assets/img/team/julia-martin.png"
-                  alt="Martyniv Juliya"
-                />
-              </div>
-              <div class="member-info">
-                <h5>Martyniv Juliya</h5>
-                <p>Lead generation</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+ team section has been deleted by the order of PM
     </section> -->
     <section class="portfolio-area-v2 pb-80" id="portfolio">
       <div class="container-fluid swiper">
         <div class="row">
           <div class="col-md-12">
             <div class="section-title text-center mb-70 wow fadeInUp">
-              <span class="span">Portfolio</span>
+              <span class="span" id="portfolio-anchor">Portfolio</span>
               <h2>Our works</h2>
             </div>
           </div>
@@ -934,7 +861,7 @@
           <div class="col-md-4">
             <div class="datapro_logo">
               <a href="index.html"
-                ><svg width="200">
+                ><svg width="200" height="45">
                   <use
                     href="assets/svg/symbol-defs.svg#icon-rh-logo"
                   ></use></svg
@@ -945,22 +872,31 @@
             <div class="social-media-links">
               <ul>
                 <li>
-                  <a
-                    href="https://api.whatsapp.com/send?text=*Find%20Talents%20for%20Your%20Business%20in%20Our%20Outstaffing%20Company"
+                  <a href="https://api.whatsapp.com/send?phone=380666146468"
                     ><svg class="icon" width="40" height="40">
-                      <use
-                        href="assets/svg/symbol-defs.svg#icon-whatsup"
-                      ></use></svg
-                  ></a>
+                      <use href="assets/svg/symbol-defs.svg#icon-whatsup"></use>
+                    </svg>
+                    <p>+380 (66) 614-6468</p></a
+                  >
                 </li>
                 <li>
                   <a href="mailto:sales@rh-s.com"
                     ><svg class="icon" width="40" height="40">
-                      <use
-                        href="assets/svg/symbol-defs.svg#icon-gmail"
-                      ></use></svg
-                  ></a>
+                      <use href="assets/svg/symbol-defs.svg#icon-gmail"></use>
+                    </svg>
+                    <p>Sales@rh-s.com</p></a
+                  >
                 </li>
+                <li>
+                  <a href="mailto:finance@rh-s.com"
+                    ><svg class="icon" width="40" height="40">
+                      <use href="assets/svg/symbol-defs.svg#icon-gmail"></use>
+                    </svg>
+                    <p>finance@rh-s.com</p></a
+                  >
+                </li>
+                <!-- <a href="mailto:Sales@rh-s.com">Sales@rh-s.com</a>
+              <a href="mailto:finance@rh-s.com">finance@rh-s.com</a> -->
               </ul>
             </div>
           </div>
@@ -970,6 +906,24 @@
     <div id="modal-backdrop">
       <div id="modal-content"></div>
       <button type="button" class="close-btn"><span>&#10006;</span></button>
+    </div>
+    <div id="modal-calendly">
+      <div id="modal-content">
+        <div
+          id="calendly"
+          class="calendly-inline-widget"
+          data-url="https://calendly.com/sales-rhs/demo-call"
+          style="min-width: 320px; height: 630px"
+        ></div>
+        <script
+          type="text/javascript"
+          src="https://assets.calendly.com/assets/external/widget.js"
+          async
+        ></script>
+      </div>
+      <button type="button" id="js-close-btn" class="close-btn">
+        <span>&#10006;</span>
+      </button>
     </div>
     <a href="#" class="back-to-top"><i class="far fa-angle-up"></i></a>
 

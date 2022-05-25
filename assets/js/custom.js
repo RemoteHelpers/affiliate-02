@@ -5,7 +5,6 @@
   function mainMenu() {
     // Variables
     var var_window = $(window),
-      switchOn = $(".js-switch-on-btn"),
       navContainer = $(".header-navigation"),
       navbarToggler = $(".navbar-toggler"),
       navMenu = $(".nav-menu"),
@@ -61,24 +60,6 @@
   // Document Ready
   $(document).ready(function () {
     mainMenu();
-  });
-  // Panel Widget
-  var panelClose = $(".panel-close"),
-    contactUs = $(".phon-column"),
-    panelWrap = $(".offcanvas-panel");
-  contactUs.on("click", function (e) {
-    e.preventDefault();
-    panelWrap.toggleClass("panel-on");
-  });
-  panelClose.on("click", function (e) {
-    e.preventDefault();
-    panelWrap.removeClass("panel-on");
-  });
-  panelWrap.on("click", function (e) {
-    e.preventDefault();
-    if (e.target === e.currentTarget) {
-      panelWrap.removeClass("panel-on");
-    }
   });
   //===== Prealoder
   $(window).on("load", function (event) {

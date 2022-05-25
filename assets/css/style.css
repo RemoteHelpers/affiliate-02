@@ -655,8 +655,7 @@ header .container-fluid {
   background-color: #fff;
   padding: 40px;
   position: relative;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
   margin-right: -400px;
   -webkit-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
@@ -679,29 +678,19 @@ header .container-fluid {
 }
 .offcanvas-panel .contact-us ul li {
   position: relative;
-  padding-left: 60px;
+  padding-left: 30px;
   margin-bottom: 30px;
   margin-left: 0px;
+}
+.offcanvas-panel .contact-us ul li .icon {
+  margin-right: 10px;
 }
 .offcanvas-panel .contact-us ul li:last-child {
   margin-bottom: 0px;
 }
-.offcanvas-panel .contact-us ul li i {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  background-color: #ffaa17;
-  border-radius: 50%;
-  font-size: 14px;
-  border-radius: 50%;
-  text-align: center;
-  color: #fff;
+.offcanvas-panel .contact-us ul li:hover .icon {
+  --color1: #232323;
+  --color2: #ffaa17;
 }
 .offcanvas-panel .panel-close {
   position: absolute;
@@ -1585,9 +1574,16 @@ header .container-fluid {
 .footer-area-v2 .social-media-links {
   float: right;
 }
+.footer-area-v2 .social-media-links ul {
+  display: flex;
+  align-items: center;
+}
 .footer-area-v2 .social-media-links ul li {
-  display: inline-block;
-  margin-left: 10px;
+  display: block;
+  margin-left: 20px;
+}
+.footer-area-v2 .social-media-links ul li:first-child {
+  margin-left: 0;
 }
 .footer-area-v2 .social-media-links ul li a {
   display: -webkit-box;
@@ -1598,22 +1594,22 @@ header .container-fluid {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(28, 30, 34, 0.1);
+  justify-content: start;
   color: #1c1e22;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+}
+.footer-area-v2 .social-media-links ul li a .icon {
+  margin-right: 10px;
 }
 .footer-area-v2 .social-media-links ul li a:hover .icon,
 .footer-area-v2 .social-media-links ul li a:focus .icon {
   --color1: #232323;
   --color2: #ffaa17;
 }
-#modal-backdrop {
+#modal-backdrop,
+#modal-calendly {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1623,11 +1619,14 @@ header .container-fluid {
   z-index: 1000000000;
   opacity: 0;
   visibility: hidden;
+  transition: all 0.3s ease-out;
 }
-#modal-backdrop.is-visible {
+#modal-backdrop.is-visible,
+#modal-calendly.is-visible {
   visibility: visible;
   opacity: 1;
 }
+
 #modal-content {
   position: absolute;
   top: 50%;
@@ -1640,7 +1639,8 @@ header .container-fluid {
   overflow-y: auto;
   overflow-x: auto;
 }
-#modal-backdrop .close-btn {
+#modal-backdrop .close-btn,
+#modal-calendly .close-btn {
   position: fixed;
   width: 70px;
   height: 70px;
@@ -1654,12 +1654,24 @@ header .container-fluid {
   border-radius: 50%;
   padding: 20px;
 }
-#modal-backdrop .close-btn span {
+#modal-backdrop .close-btn span,
+#modal-calendly .close-btn span {
   font-size: 35px;
 }
-#modal-backdrop .close-btn:hover {
+#modal-backdrop .close-btn:hover,
+#modal-calendly .close-btn:hover {
   background-color: #222429;
 }
-#modal-backdrop .close-btn:hover span {
+#modal-backdrop .close-btn:hover span,
+#modal-calendly .close-btn:hover span {
   color: #ffaa17;
+}
+#modal-calendly #modal-content {
+  width: auto;
+  height: auto;
+}
+#modal-calendly #calendly {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
 }

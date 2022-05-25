@@ -17,8 +17,28 @@
   .work-process #pricelist-title {
     width: 650px;
   }
+  .work-process .contact-form #calendly {
+    min-height: 694px;
+  }
+  #portfolio-anchor {
+    padding-top: 120px;
+  }
+  .portfolio-area-v2 {
+    padding-top: 240px;
+  }
+  #modal-calendly #calendly {
+    width: 1000px;
+    min-height: 1000px;
+  }
+  #modal-calendly #modal-content {
+    overflow: hidden;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1870px) {
+  .header-area-v2 .brand-logo {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
   header .container-fluid {
     padding-left: 15px;
     padding-right: 15px;
@@ -58,16 +78,43 @@
   .work-process #pricelist-title {
     width: 650px;
   }
+  .work-process .contact-form #calendly {
+    min-height: 674px;
+  }
   #burger-menu-bar .off-menu {
     display: none;
   }
   .header-area-v2 .header-right ul {
     justify-content: end;
   }
+  #portfolio-anchor {
+    padding-top: 115px;
+  }
+  .portfolio-area-v2 {
+    padding-top: 245px;
+  }
+  #modal-calendly #calendly {
+    width: 1000px;
+    min-height: 1000px;
+  }
+  #modal-calendly #modal-content {
+    overflow: hidden;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header-navigation .main-menu ul li.menu-item-has-children > a:after {
     display: none;
+  }
+  .header-area-v2 {
+    display: flex;
+    align-items: center;
+  }
+  .header-area-v2 .header-navigation {
+    width: 100%;
+  }
+  .header-area-v2 .brand-logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   header .container-fluid {
     padding-left: 15px;
@@ -138,11 +185,35 @@
   .work-process .section-title #pricelist-title {
     width: 500px;
   }
+  .work-process .contact-form #calendly {
+    min-height: 674px;
+  }
+  #portfolio-anchor {
+    padding-top: 100px;
+  }
+  .portfolio-area-v2 {
+    padding-top: 260px;
+  }
+  #modal-calendly #calendly {
+    width: 500px;
+    min-height: 1000px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-content h1 {
     font-size: 34px;
     line-height: 44px;
+  }
+  .header-area-v2 {
+    display: flex;
+    align-items: center;
+  }
+  .header-area-v2 .header-navigation {
+    width: 100%;
+  }
+  .header-area-v2 .brand-logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .cta-wrapper-two .cta-content-box {
     margin-bottom: 40px;
@@ -162,6 +233,27 @@
   }
   .about-area-v2 .about-list-item .row .col-lg-6 {
     width: 50%;
+  }
+  .footer-area-v2 .social-media-links ul {
+    width: fit-content;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer-area-v2 .social-media-links ul li:nth-child(n + 2) {
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: left;
+  }
+  #portfolio-anchor {
+    padding-top: 79px;
+  }
+  .portfolio-area-v2 {
+    padding-top: 281px;
+  }
+  #modal-calendly #calendly {
+    width: 500px;
+    min-height: 1000px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -223,13 +315,24 @@
   .work-process .contact-form .calendly-inline-widget {
     margin-left: 20px;
   }
-  .work-process .section-title {
-    /* width: 400px; */
+  .work-process .contact-form #calendly {
+    min-height: 674px;
   }
 }
 @media only screen and (max-width: 767px) {
   .header-area-v2 .header-right ul li.phon-column {
     display: none;
+  }
+  .header-area-v2 {
+    display: flex;
+    align-items: center;
+  }
+  .header-area-v2 .header-navigation {
+    width: 100%;
+  }
+  .header-area-v2 .brand-logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .section-title h2 {
     font-size: 32px;
@@ -342,6 +445,32 @@
   }
   .work-process .contact-form form {
     margin-bottom: 40px;
+  }
+  .work-process .contact-form #calendly {
+    margin-left: 0;
+  }
+  .footer-area-v2 {
+    min-height: 100px;
+  }
+  .footer-area-v2 .social-media-links ul {
+    width: fit-content;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer-area-v2 .social-media-links ul li:nth-child(n + 2) {
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: left;
+  }
+  #portfolio-anchor {
+    padding-top: 79px;
+  }
+  .portfolio-area-v2 {
+    padding-top: 281px;
+  }
+  #modal-calendly #calendly {
+    min-height: 1000px;
   }
 }
 @media only screen and (max-width: 482px) {
