@@ -116,6 +116,7 @@
       centerMode: true,
       variableWidth: true,
       pauseOnHover: false,
+      slidesToShow: 5,
     });
   });
 
@@ -187,6 +188,7 @@ const refs = {
   btnCalendly: document.querySelector("#js-calendly-open"),
   modalCalendly: document.querySelector("#modal-calendly"),
   closeCalendlyBtn: document.querySelector("#modal-calendly .close-btn"),
+  form: document.querySelector("#submit-form"),
 };
 // onOpen Panel
 refs.contactUs.addEventListener("click", openPanel);
@@ -208,6 +210,24 @@ function onWrapClick(e) {
 
 // onOpen Modal
 refs.swiperSlide.addEventListener("click", onOpenModal);
+
+const images = [
+  "assets/img/portfolio/clean-home.png",
+  "assets/img/portfolio/music-box.png",
+  "assets/img/portfolio/webblog.png",
+  "assets/img/portfolio/greenmarket.png",
+  "assets/img/portfolio/by-travel.png",
+  "assets/img/portfolio/drivelo.png",
+  "assets/img/portfolio/crypto.png",
+  "assets/img/portfolio/alien-shaman.png",
+  "assets/img/portfolio/epil-room.png",
+  "assets/img/portfolio/austria.png",
+  "assets/img/portfolio/tibidabo-full.jpg",
+  "assets/img/portfolio/invest-full.jpg",
+  "assets/img/portfolio/asure-1-full.jpg",
+  "assets/img/portfolio/similarweb-full.jpg",
+];
+
 function onOpenModal(e) {
   e.preventDefault();
   if (!e.target.closest(".portfolio-item")) return;
@@ -215,7 +235,7 @@ function onOpenModal(e) {
   refs.modal.classList.add("is-visible");
   refs.modal.firstElementChild.insertAdjacentHTML(
     "beforeend",
-    `<img src="${clickedImg.dataset.link || clickedImg.src}" alt="${
+    `<img src="${images[clickedImg.dataset.id - 1]}" alt="${
       clickedImg.alt
     }" style="width: 100%" />`
   );
@@ -249,4 +269,22 @@ function onCalendlyBackdropClick(e) {
   if (e.target === e.currentTarget) {
     refs.modalCalendly.classList.remove("is-visible");
   }
+}
+
+// formSubmit
+refs.form.addEventListener("submit", onSubmitForm);
+function onSubmitForm(e) {
+  e.preventDefault();
+  const entries = [];
+  const formData = new FormData(e.currentTarget);
+  formData.set(
+    "note",
+    `Selected: ${formData.get("selected")}; Note: ${formData.get("note")};`
+  );
+  formData.delete("selected");
+  formData.forEach((value, name) => {
+    entries.push([name, value]);
+  });
+  const parsedData = Object.fromEntries(entries);
+  console.log(parsedData);
 }
