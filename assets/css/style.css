@@ -989,9 +989,6 @@ header .container-fluid {
 .work-process .single-process .info .flex-info-container div:first-child {
   width: 65%;
 }
-.work-process .single-process .info .flex-info-container div:last-child {
-  /* padding-left: 30px; */
-}
 .work-process .flex-price-container {
   display: flex;
   justify-content: space-between;
