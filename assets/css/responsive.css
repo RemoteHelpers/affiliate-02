@@ -400,6 +400,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .hero-area-v2.bg_cover {
+    background-position: left;
+  }
   .section-title h2 {
     font-size: 32px;
   }
