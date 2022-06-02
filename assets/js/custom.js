@@ -285,19 +285,18 @@ function onSubmitForm(e) {
   );
   formData.delete("selected");
 
-  const entries = [];
-  formData.forEach((value, name) => {
-    entries.push([name, value]);
-  });
-  const parsedData = Object.fromEntries(entries);
-  console.log(parsedData);
-  window.location.assign("./assets/thank-you-page.html");
-  // addUserData(formData)
-  //   .then((data) => {
-  //     console.log(data);
-  //   })
-  //   .catch((error) => console.log(error.message));
-  // refs.form.reset();
+  // const entries = [];
+  // formData.forEach((value, name) => {
+  //   entries.push([name, value]);
+  // });
+  // const parsedData = Object.fromEntries(entries);
+  addUserData(formData)
+    .then((data) => {
+      console.log(data);
+      window.location.assign("./assets/thank-you-page.html");
+    })
+    .catch((error) => console.log(error.message));
+  refs.form.reset();
 }
 const url = "https://crm-s.com/api/v1/leads-public";
 async function addUserData(userData) {
