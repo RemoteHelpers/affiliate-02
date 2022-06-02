@@ -110,7 +110,7 @@
     $(".swiper-wrapper").slick({
       arrows: false,
       speed: 500,
-      autoplay: false,
+      autoplay: true,
       touchThreShold: 10,
       waitForAnimate: false,
       centerMode: true,
