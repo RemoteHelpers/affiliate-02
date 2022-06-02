@@ -235,7 +235,7 @@ function onOpenModal(e) {
   refs.modal.classList.add("is-visible");
   refs.modal.firstElementChild.insertAdjacentHTML(
     "beforeend",
-    `<img src="${images[clickedImg.dataset.id - 1]}" alt="${
+    `<img src="${images[Number(clickedImg.dataset.id) - 1]}" alt="${
       clickedImg.alt
     }" style="width: 100%" />`
   );
@@ -275,16 +275,35 @@ function onCalendlyBackdropClick(e) {
 refs.form.addEventListener("submit", onSubmitForm);
 function onSubmitForm(e) {
   e.preventDefault();
-  const entries = [];
   const formData = new FormData(e.currentTarget);
+  if (formData.get("selected") === "Choose your preferences") {
+    formData.set("selected", "-");
+  }
   formData.set(
     "note",
     `Selected: ${formData.get("selected")}; Note: ${formData.get("note")};`
   );
   formData.delete("selected");
+
+  const entries = [];
   formData.forEach((value, name) => {
     entries.push([name, value]);
   });
   const parsedData = Object.fromEntries(entries);
   console.log(parsedData);
+
+  addUserData(formData)
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => console.log(error.message));
+  refs.form.reset();
+}
+const url = "https://crm-s.com/api/v1/leads-public";
+async function addUserData(userData) {
+  const response = await fetch(url, {
+    method: "POST",
+    body: userData,
+  });
+  return response.json();
 }
