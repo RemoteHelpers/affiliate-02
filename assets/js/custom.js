@@ -110,7 +110,7 @@
     $(".swiper-wrapper").slick({
       arrows: false,
       speed: 500,
-      autoplay: true,
+      autoplay: false,
       touchThreShold: 10,
       waitForAnimate: false,
       centerMode: true,
@@ -291,13 +291,13 @@ function onSubmitForm(e) {
   });
   const parsedData = Object.fromEntries(entries);
   console.log(parsedData);
-
-  addUserData(formData)
-    .then((data) => {
-      console.log(data);
-    })
-    .catch((error) => console.log(error.message));
-  refs.form.reset();
+  window.location.assign("./assets/thank-you-page.html");
+  // addUserData(formData)
+  //   .then((data) => {
+  //     console.log(data);
+  //   })
+  //   .catch((error) => console.log(error.message));
+  // refs.form.reset();
 }
 const url = "https://crm-s.com/api/v1/leads-public";
 async function addUserData(userData) {

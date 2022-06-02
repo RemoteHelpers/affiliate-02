@@ -1527,10 +1527,11 @@ header .container-fluid {
   height: 180px;
   padding-top: 15px;
 }
-.work-process .contact-form .main-btn:hover {
+.work-process .contact-form .main-btn:hover,
+.work-process .contact-form .main-btn:focus {
   background-color: #fff;
   color: #ffaa17;
-  border: 1px solid#ffaa17;
+  outline: 1px solid#ffaa17;
 }
 .work-process .contact-form .select-input {
   color: white;
